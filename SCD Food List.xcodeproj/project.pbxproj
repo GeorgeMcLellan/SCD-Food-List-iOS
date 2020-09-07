@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D84773A2506133800128781 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8477392506133800128781 /* FoodList.swift */; };
 		752F15F124F24AFE00E1A7AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F15F024F24AFE00E1A7AF /* AppDelegate.swift */; };
 		752F15F324F24AFE00E1A7AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F15F224F24AFE00E1A7AF /* SceneDelegate.swift */; };
 		752F15F524F24AFE00E1A7AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F15F424F24AFE00E1A7AF /* ContentView.swift */; };
@@ -14,11 +15,12 @@
 		752F15FA24F24B0000E1A7AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752F15F924F24B0000E1A7AF /* Preview Assets.xcassets */; };
 		752F15FD24F24B0000E1A7AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752F15FB24F24B0000E1A7AF /* LaunchScreen.storyboard */; };
 		752F160724F2501700E1A7AF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F160624F2501700E1A7AF /* Food.swift */; };
-		752F160924F2525C00E1A7AF /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F160824F2525C00E1A7AF /* FoodList.swift */; };
+		752F160924F2525C00E1A7AF /* FoodListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F160824F2525C00E1A7AF /* FoodListData.swift */; };
 		752F160B24F253F500E1A7AF /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F160A24F253F500E1A7AF /* FoodRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D8477392506133800128781 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		752F15ED24F24AFE00E1A7AF /* SCD Food List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCD Food List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		752F15F024F24AFE00E1A7AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		752F15F224F24AFE00E1A7AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		752F15FC24F24B0000E1A7AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		752F15FE24F24B0000E1A7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		752F160624F2501700E1A7AF /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		752F160824F2525C00E1A7AF /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
+		752F160824F2525C00E1A7AF /* FoodListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListData.swift; sourceTree = "<group>"; };
 		752F160A24F253F500E1A7AF /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				752F15FE24F24B0000E1A7AF /* Info.plist */,
 				752F15F824F24B0000E1A7AF /* Preview Content */,
 				752F160A24F253F500E1A7AF /* FoodRow.swift */,
+				5D8477392506133800128781 /* FoodList.swift */,
 			);
 			path = "SCD Food List";
 			sourceTree = "<group>";
@@ -87,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				752F160624F2501700E1A7AF /* Food.swift */,
-				752F160824F2525C00E1A7AF /* FoodList.swift */,
+				752F160824F2525C00E1A7AF /* FoodListData.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -164,11 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				752F15F124F24AFE00E1A7AF /* AppDelegate.swift in Sources */,
+				5D84773A2506133800128781 /* FoodList.swift in Sources */,
 				752F160724F2501700E1A7AF /* Food.swift in Sources */,
 				752F15F324F24AFE00E1A7AF /* SceneDelegate.swift in Sources */,
 				752F15F524F24AFE00E1A7AF /* ContentView.swift in Sources */,
 				752F160B24F253F500E1A7AF /* FoodRow.swift in Sources */,
-				752F160924F2525C00E1A7AF /* FoodList.swift in Sources */,
+				752F160924F2525C00E1A7AF /* FoodListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +310,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SCD Food List/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SCD Food List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,8 +331,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SCD Food List/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SCD Food List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

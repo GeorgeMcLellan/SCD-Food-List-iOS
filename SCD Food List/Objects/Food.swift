@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Food {
+struct Food: Identifiable {
+    var id = UUID()
     var name: String
     var allowed: FoodAllowed
     var foodGroup: FoodGroup = .miscellaneous

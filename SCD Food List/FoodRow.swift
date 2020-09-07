@@ -15,11 +15,13 @@ struct FoodRow: View {
             Text(food.name)
             Text(food.foodGroup.rawValue)
         }
+        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+    .padding()
     }
 }
 
 struct FoodRow_Previews: PreviewProvider {
     static var previews: some View {
-        FoodRow(food: FoodList[0])
+        FoodRow(food: FoodListData[20])
     }
 }
