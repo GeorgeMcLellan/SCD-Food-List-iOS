@@ -13,6 +13,9 @@
 		752F15F724F24B0000E1A7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752F15F624F24B0000E1A7AF /* Assets.xcassets */; };
 		752F15FA24F24B0000E1A7AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752F15F924F24B0000E1A7AF /* Preview Assets.xcassets */; };
 		752F15FD24F24B0000E1A7AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752F15FB24F24B0000E1A7AF /* LaunchScreen.storyboard */; };
+		752F160724F2501700E1A7AF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F160624F2501700E1A7AF /* Food.swift */; };
+		752F160924F2525C00E1A7AF /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F160824F2525C00E1A7AF /* FoodList.swift */; };
+		752F160B24F253F500E1A7AF /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F160A24F253F500E1A7AF /* FoodRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		752F15F924F24B0000E1A7AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		752F15FC24F24B0000E1A7AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		752F15FE24F24B0000E1A7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		752F160624F2501700E1A7AF /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		752F160824F2525C00E1A7AF /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
+		752F160A24F253F500E1A7AF /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		752F15EF24F24AFE00E1A7AF /* SCD Food List */ = {
 			isa = PBXGroup;
 			children = (
+				752F160524F2500100E1A7AF /* Objects */,
 				752F15F024F24AFE00E1A7AF /* AppDelegate.swift */,
 				752F15F224F24AFE00E1A7AF /* SceneDelegate.swift */,
 				752F15F424F24AFE00E1A7AF /* ContentView.swift */,
@@ -63,6 +70,7 @@
 				752F15FB24F24B0000E1A7AF /* LaunchScreen.storyboard */,
 				752F15FE24F24B0000E1A7AF /* Info.plist */,
 				752F15F824F24B0000E1A7AF /* Preview Content */,
+				752F160A24F253F500E1A7AF /* FoodRow.swift */,
 			);
 			path = "SCD Food List";
 			sourceTree = "<group>";
@@ -73,6 +81,15 @@
 				752F15F924F24B0000E1A7AF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		752F160524F2500100E1A7AF /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				752F160624F2501700E1A7AF /* Food.swift */,
+				752F160824F2525C00E1A7AF /* FoodList.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				752F15F124F24AFE00E1A7AF /* AppDelegate.swift in Sources */,
+				752F160724F2501700E1A7AF /* Food.swift in Sources */,
 				752F15F324F24AFE00E1A7AF /* SceneDelegate.swift in Sources */,
 				752F15F524F24AFE00E1A7AF /* ContentView.swift in Sources */,
+				752F160B24F253F500E1A7AF /* FoodRow.swift in Sources */,
+				752F160924F2525C00E1A7AF /* FoodList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
