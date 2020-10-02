@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D4D82F02526E9B900FB8E09 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D82EF2526E9B900FB8E09 /* SearchBar.swift */; };
+		5D4D82F32526ED6A00FB8E09 /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D82F22526ED6A00FB8E09 /* FoodDetail.swift */; };
 		5D84773A2506133800128781 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8477392506133800128781 /* FoodList.swift */; };
 		752F15F124F24AFE00E1A7AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F15F024F24AFE00E1A7AF /* AppDelegate.swift */; };
 		752F15F324F24AFE00E1A7AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F15F224F24AFE00E1A7AF /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D4D82EF2526E9B900FB8E09 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5D4D82F22526ED6A00FB8E09 /* FoodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
 		5D8477392506133800128781 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		752F15ED24F24AFE00E1A7AF /* SCD Food List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SCD Food List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		752F15F024F24AFE00E1A7AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D4D82ED2526E8B000FB8E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				752F160A24F253F500E1A7AF /* FoodRow.swift */,
+				5D8477392506133800128781 /* FoodList.swift */,
+				752F15F424F24AFE00E1A7AF /* ContentView.swift */,
+				5D4D82EF2526E9B900FB8E09 /* SearchBar.swift */,
+				5D4D82F22526ED6A00FB8E09 /* FoodDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		752F15E424F24AFE00E1A7AF = {
 			isa = PBXGroup;
 			children = (
@@ -64,16 +80,14 @@
 		752F15EF24F24AFE00E1A7AF /* SCD Food List */ = {
 			isa = PBXGroup;
 			children = (
+				5D4D82ED2526E8B000FB8E09 /* View */,
 				752F160524F2500100E1A7AF /* Objects */,
 				752F15F024F24AFE00E1A7AF /* AppDelegate.swift */,
 				752F15F224F24AFE00E1A7AF /* SceneDelegate.swift */,
-				752F15F424F24AFE00E1A7AF /* ContentView.swift */,
 				752F15F624F24B0000E1A7AF /* Assets.xcassets */,
 				752F15FB24F24B0000E1A7AF /* LaunchScreen.storyboard */,
 				752F15FE24F24B0000E1A7AF /* Info.plist */,
 				752F15F824F24B0000E1A7AF /* Preview Content */,
-				752F160A24F253F500E1A7AF /* FoodRow.swift */,
-				5D8477392506133800128781 /* FoodList.swift */,
 			);
 			path = "SCD Food List";
 			sourceTree = "<group>";
@@ -171,8 +185,10 @@
 				752F160724F2501700E1A7AF /* Food.swift in Sources */,
 				752F15F324F24AFE00E1A7AF /* SceneDelegate.swift in Sources */,
 				752F15F524F24AFE00E1A7AF /* ContentView.swift in Sources */,
+				5D4D82F02526E9B900FB8E09 /* SearchBar.swift in Sources */,
 				752F160B24F253F500E1A7AF /* FoodRow.swift in Sources */,
 				752F160924F2525C00E1A7AF /* FoodListData.swift in Sources */,
+				5D4D82F32526ED6A00FB8E09 /* FoodDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
