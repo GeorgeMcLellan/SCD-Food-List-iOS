@@ -16,11 +16,10 @@ struct Food: Identifiable {
     var description: String = ""
 }
 
-
-enum FoodAllowed {
-    case legal
-    case illegal
-    case warning
+enum FoodAllowed: String {
+    case legal = "Legal"
+    case illegal = "Illegal"
+    case warning = "Warning"
 }
 
 enum FoodGroup: String {

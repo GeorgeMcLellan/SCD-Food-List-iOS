@@ -35,14 +35,14 @@ struct FoodRow: View {
 
 func getBackgroundColor(foodAllowed: FoodAllowed) -> Color {
     switch(foodAllowed) {
-    case .legal: return .green
-    case .illegal: return .red
-    case .warning: return .yellow
+    case .legal: return .greenBackground
+    case .illegal: return .redBackground
+    case .warning: return .yellowBackground
     }
 }
 
 struct FoodRow_Previews: PreviewProvider {
     static var previews: some View {
-        FoodRow(food: FoodListData[20])
+        FoodRow(food: FoodListData[21])
     }
 }
