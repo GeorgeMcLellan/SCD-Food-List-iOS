@@ -15,14 +15,22 @@ struct FoodList: View {
         NavigationView {
             VStack {
                 SearchBar(text: $searchText)
-                List(FoodListData.filter { searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased()) }) { food in
+                
+                let filteredFoods = FoodListData.filter { searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased()) }
+                
+                List(filteredFoods) { food in
                     NavigationLink(destination: FoodDetail(food: food)) {
                         FoodRow(food: food)
+                        
                     }
-                    
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 15))
                 }
+                .listStyle(.inset)
             }
-            .navigationBarTitle(Text("SCD Food List"))
+            .navigationTitle(Text("SCD Food List"))
+            .navigationBarTitleDisplayMode(.inline)
+        
         }
     }
 }

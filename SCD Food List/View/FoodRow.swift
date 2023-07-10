@@ -26,7 +26,7 @@ struct FoodRow: View {
                     
             }
         }
-        .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
         .background(getBackgroundColor(foodAllowed: food.allowed))
         .cornerRadius(4)
 
